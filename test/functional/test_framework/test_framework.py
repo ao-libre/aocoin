@@ -141,7 +141,7 @@ class BitcoinTestFramework(metaclass=BitcoinTestMetaClass):
         config = configparser.ConfigParser()
         config.read_file(open(self.options.configfile))
         self.config = config
-        self.options.bitcoind = os.getenv("LITECOIND", default=config["environment"]["BUILDDIR"] + '/src/litecoind' + config["environment"]["EXEEXT"])
+        self.options.bitcoind = os.getenv("LITECOIND", default=config["environment"]["BUILDDIR"] + '/src/aocoind' + config["environment"]["EXEEXT"])
         self.options.bitcoincli = os.getenv("LITECOINCLI", default=config["environment"]["BUILDDIR"] + '/src/aocoin-cli' + config["environment"]["EXEEXT"])
 
         os.environ['PATH'] = os.pathsep.join([
@@ -337,7 +337,7 @@ class BitcoinTestFramework(metaclass=BitcoinTestMetaClass):
             ))
 
     def start_node(self, i, *args, **kwargs):
-        """Start a litecoind"""
+        """Start a aocoind"""
 
         node = self.nodes[i]
 
@@ -368,12 +368,12 @@ class BitcoinTestFramework(metaclass=BitcoinTestMetaClass):
                 coverage.write_all_rpc_commands(self.options.coveragedir, node.rpc)
 
     def stop_node(self, i, expected_stderr='', wait=0):
-        """Stop a litecoind test node"""
+        """Stop a aocoind test node"""
         self.nodes[i].stop_node(expected_stderr, wait=wait)
         self.nodes[i].wait_until_stopped()
 
     def stop_nodes(self, wait=0):
-        """Stop multiple litecoind test nodes"""
+        """Stop multiple aocoind test nodes"""
         for node in self.nodes:
             # Issue RPC to stop nodes
             node.stop_node(wait=wait)
@@ -539,7 +539,7 @@ class BitcoinTestFramework(metaclass=BitcoinTestMetaClass):
     def skip_if_no_bitcoind_zmq(self):
         """Skip the running test if bitcoind has not been compiled with zmq support."""
         if not self.is_zmq_compiled():
-            raise SkipTest("litecoind has not been built with zmq enabled.")
+            raise SkipTest("aocoind has not been built with zmq enabled.")
 
     def skip_if_no_wallet(self):
         """Skip the running test if wallet has not been compiled."""

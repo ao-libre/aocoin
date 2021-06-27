@@ -2,7 +2,7 @@
 
 *.exe
 src/aocoin
-src/litecoind
+src/aocoind
 src/aocoin-cli
 src/aocoin-tx
 src/aocoin-wallet

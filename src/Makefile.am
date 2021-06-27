@@ -82,7 +82,7 @@ TESTS =
 BENCHMARKS =
 
 if BUILD_BITCOIND
-  bin_PROGRAMS += litecoind
+  bin_PROGRAMS += aocoind
 endif
 
 if BUILD_BITCOIN_CLI

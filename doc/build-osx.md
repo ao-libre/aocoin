@@ -71,7 +71,7 @@ Build Aocoin Core
     or
 
         cd ~/aocoin/src
-        cp litecoind /usr/local/bin/
+        cp aocoind /usr/local/bin/
         cp aocoin-cli /usr/local/bin/
 
 Disable-wallet mode
@@ -88,7 +88,7 @@ Mining is also possible in disable-wallet mode using the `getblocktemplate` RPC 
 Running
 -------
 
-Aocoin Core is now available at `./src/litecoind`
+Aocoin Core is now available at `./src/aocoind`
 
 Before running, you may create an empty configuration file:
 
@@ -98,7 +98,7 @@ Before running, you may create an empty configuration file:
 
     chmod 600 "/Users/${USER}/Library/Application Support/Aocoin/aocoin.conf"
 
-The first time you run litecoind, it will start downloading the blockchain. This process could take many hours, or even days on slower than average systems.
+The first time you run aocoind, it will start downloading the blockchain. This process could take many hours, or even days on slower than average systems.
 
 You can monitor the download process by looking at the debug.log file:
 
@@ -107,7 +107,7 @@ You can monitor the download process by looking at the debug.log file:
 Other commands:
 -------
 
-    ./src/litecoind -daemon # Starts the aocoin daemon.
+    ./src/aocoind -daemon # Starts the aocoin daemon.
     ./src/aocoin-cli --help # Outputs a list of command-line options.
     ./src/aocoin-cli help # Outputs a list of RPC commands when the daemon is running.
 

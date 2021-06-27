@@ -247,7 +247,7 @@ in-tree. Example use:
 $ valgrind --suppressions=contrib/valgrind.supp src/test/test_litecoin
 $ valgrind --suppressions=contrib/valgrind.supp --leak-check=full \
       --show-leak-kinds=all src/test/test_litecoin --log_level=test_suite
-$ valgrind -v --leak-check=full src/litecoind -printtoconsole
+$ valgrind -v --leak-check=full src/aocoind -printtoconsole
 ```
 
 ### Compiling for test coverage
@@ -291,13 +291,13 @@ Make sure you [understand the security
 trade-offs](https://lwn.net/Articles/420403/) of setting these kernel
 parameters.
 
-To profile a running litecoind process for 60 seconds, you could use an
+To profile a running aocoind process for 60 seconds, you could use an
 invocation of `perf record` like this:
 
 ```sh
 $ perf record \
     -g --call-graph dwarf --per-thread -F 140 \
-    -p `pgrep litecoind` -- sleep 60
+    -p `pgrep aocoind` -- sleep 60
 ```
 
 You could then analyze the results by running
@@ -818,7 +818,7 @@ In addition to reviewing the upstream changes in `env_posix.cc`, you can use `ls
 check this. For example, on Linux this command will show open `.ldb` file counts:
 
 ```bash
-$ lsof -p $(pidof litecoind) |\
+$ lsof -p $(pidof aocoind) |\
     awk 'BEGIN { fd=0; mem=0; } /ldb$/ { if ($4 == "mem") mem++; else fd++ } END { printf "mem = %s, fd = %s\n", mem, fd}'
 mem = 119, fd = 0
 ```

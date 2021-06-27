@@ -16,7 +16,7 @@ The following are some helpful notes on how to run Aocoin Core on your native pl
 Unpack the files into a directory and run:
 
 - `bin/aocoin-qt` (GUI) or
-- `bin/litecoind` (headless)
+- `bin/aocoind` (headless)
 
 ### Windows
 
