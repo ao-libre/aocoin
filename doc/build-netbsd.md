@@ -22,7 +22,7 @@ libtool
 pkg-config
 python37
 
-git clone https://github.com/litecoin-project/litecoin.git
+git clone https://github.com/aocoin-project/aocoin.git
 ```
 
 See [dependencies.md](dependencies.md) for a complete overview.

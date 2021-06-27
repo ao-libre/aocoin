@@ -43,8 +43,8 @@ Build Aocoin Core
 
 1. Clone the Aocoin Core source code:
 
-        git clone https://github.com/litecoin-project/litecoin
-        cd litecoin
+        git clone https://github.com/aocoin-project/aocoin
+        cd aocoin
 
 2.  Build Aocoin Core:
 
@@ -70,9 +70,9 @@ Build Aocoin Core
 
     or
 
-        cd ~/litecoin/src
+        cd ~/aocoin/src
         cp litecoind /usr/local/bin/
-        cp litecoin-cli /usr/local/bin/
+        cp aocoin-cli /usr/local/bin/
 
 Disable-wallet mode
 --------------------
@@ -94,9 +94,9 @@ Before running, you may create an empty configuration file:
 
     mkdir -p "/Users/${USER}/Library/Application Support/Aocoin"
 
-    touch "/Users/${USER}/Library/Application Support/Aocoin/litecoin.conf"
+    touch "/Users/${USER}/Library/Application Support/Aocoin/aocoin.conf"
 
-    chmod 600 "/Users/${USER}/Library/Application Support/Aocoin/litecoin.conf"
+    chmod 600 "/Users/${USER}/Library/Application Support/Aocoin/aocoin.conf"
 
 The first time you run litecoind, it will start downloading the blockchain. This process could take many hours, or even days on slower than average systems.
 
@@ -107,9 +107,9 @@ You can monitor the download process by looking at the debug.log file:
 Other commands:
 -------
 
-    ./src/litecoind -daemon # Starts the litecoin daemon.
-    ./src/litecoin-cli --help # Outputs a list of command-line options.
-    ./src/litecoin-cli help # Outputs a list of RPC commands when the daemon is running.
+    ./src/litecoind -daemon # Starts the aocoin daemon.
+    ./src/aocoin-cli --help # Outputs a list of command-line options.
+    ./src/aocoin-cli help # Outputs a list of RPC commands when the daemon is running.
 
 Notes
 -----

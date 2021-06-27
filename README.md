@@ -1,9 +1,9 @@
 Aocoin Core integration/staging tree
 =====================================
 
-[![Build Status](https://travis-ci.org/litecoin-project/litecoin.svg?branch=master)](https://travis-ci.org/litecoin-project/litecoin)
+[![Build Status](https://travis-ci.org/aocoin-project/aocoin.svg?branch=master)](https://travis-ci.org/aocoin-project/aocoin)
 
-https://litecoin.org
+https://aocoin.org
 
 What is Aocoin?
 ----------------
@@ -15,7 +15,7 @@ out collectively by the network. Aocoin Core is the name of open source
 software which enables the use of this currency.
 
 For more information, as well as an immediately useable, binary version of
-the Aocoin Core software, see [https://litecoin.org](https://litecoin.org).
+the Aocoin Core software, see [https://aocoin.org](https://aocoin.org).
 
 License
 -------
@@ -27,7 +27,7 @@ Development Process
 -------------------
 
 The `master` branch is regularly built and tested, but is not guaranteed to be
-completely stable. [Tags](https://github.com/litecoin-project/litecoin/tags) are created
+completely stable. [Tags](https://github.com/aocoin-project/aocoin/tags) are created
 regularly to indicate new official, stable release versions of Aocoin Core.
 
 The contribution workflow is described in [CONTRIBUTING.md](CONTRIBUTING.md)

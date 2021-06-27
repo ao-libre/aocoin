@@ -5,7 +5,7 @@ Setup
 ---------------------
 Aocoin Core is the original Aocoin client and it builds the backbone of the network. It downloads and, by default, stores the entire history of Aocoin transactions, which requires approximately 22 gigabytes of disk space. Depending on the speed of your computer and network connection, the synchronization process can take anywhere from a few hours to a day or more.
 
-To download Aocoin Core, visit [litecoin.org](https://litecoin.org/).
+To download Aocoin Core, visit [aocoin.org](https://aocoin.org/).
 
 Running
 ---------------------
@@ -15,12 +15,12 @@ The following are some helpful notes on how to run Aocoin Core on your native pl
 
 Unpack the files into a directory and run:
 
-- `bin/litecoin-qt` (GUI) or
+- `bin/aocoin-qt` (GUI) or
 - `bin/litecoind` (headless)
 
 ### Windows
 
-Unpack the files into a directory, and then run litecoin-qt.exe.
+Unpack the files into a directory, and then run aocoin-qt.exe.
 
 ### macOS
 
@@ -28,9 +28,9 @@ Drag Aocoin Core to your applications folder, and then run Aocoin Core.
 
 ### Need Help?
 
-* See the documentation at the [Aocoin Wiki](https://litecoin.info/)
+* See the documentation at the [Aocoin Wiki](https://aocoin.info/)
 for help and more information.
-* Ask for help on [#litecoin](http://webchat.freenode.net?channels=litecoin) on Freenode. If you don't have an IRC client use [webchat here](http://webchat.freenode.net?channels=litecoin).
+* Ask for help on [#aocoin](http://webchat.freenode.net?channels=aocoin) on Freenode. If you don't have an IRC client use [webchat here](http://webchat.freenode.net?channels=aocoin).
 * Ask for help on the [AocoinTalk](https://litecointalk.io/) forums, in the [Technical Support section](https://litecointalk.io/c/technical-support).
 
 Building
@@ -65,7 +65,7 @@ The Aocoin repo's [root README](/README.md) contains relevant information on the
 
 ### Resources
 * Discuss on the [AocoinTalk](https://litecointalk.io/) forums.
-* Discuss general Aocoin development on #litecoin-dev on Freenode. If you don't have an IRC client use [webchat here](http://webchat.freenode.net/?channels=litecoin-dev.
+* Discuss general Aocoin development on #aocoin-dev on Freenode. If you don't have an IRC client use [webchat here](http://webchat.freenode.net/?channels=aocoin-dev.
 
 ### Miscellaneous
 - [Assets Attribution](assets-attribution.md)

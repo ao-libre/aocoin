@@ -366,11 +366,11 @@
         <translation>Vahelehe tööriistariba</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and litecoin: URIs)</source>
+        <source>Request payments (generates QR codes and aocoin: URIs)</source>
         <translation>Loo maksepäring (genereerib QR koodid ja litecoini: URId)</translation>
     </message>
     <message>
-        <source>Open a litecoin: URI or payment request</source>
+        <source>Open a aocoin: URI or payment request</source>
         <translation>Ava litecoini: URI või maksepäring</translation>
     </message>
     <message>
